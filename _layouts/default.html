@@ -2,32 +2,42 @@
 <html>
 <head>
   <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} John Doe, Photographer </title>
+  <title> {% if page.title %} {{ page.title }} | {% endif %} Armando Benavidez Jr </title>
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
- 
-  <div id="main">
- 
-    <header>
-      <h1> John Doe Photograghy </h1>
-    <header>
- 
-    <nav role="navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/portfolio/">Portfolio</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
- 
-    {{ content }}
- 
-    <footer>
-      <p>@copy; John Doe Photography 2011 | All Rights Reserved. </p>
-    </footer>
- 
+
+  <div id="nav" >
+
+    <img src="/img/profilei.gif" alt="Profile Pic Not Found" style="width:180px;height:180px;margin:0 auto 30% auto">
+
+
+    <ul class="nav">
+      <li class="nav"><a class="nav" href="/">Home</a></li>
+      <li class="nav"><a class="nav" href="/projects/">Projects</a></li>
+      <li class="nav"><a class="nav" href="/about">About</a></li>
+    </ul>
+
+    <ul class="nav" style= "margin-top: 300px">
+      <li class="media"><a class="media" href="https://github.com/abenavidez">
+        <img src="/img/gitHub.png" alt="GH" style="width:42px;height:42px;border:0"></a></li>
+      <li class="media"><a class="media" href="https://www.linkedin.com/in/abenavidez">
+        <img src="/img/linkedIn.png" alt="LI" style="width:42px;height:42px;border:0">
+      </a></li>
+    </ul>
+
   </div>
+
+  <div id="main">
+
+      {{ content }}
+
+
+
+  </div>
+
+  <footer>
+    <p>by Armando Benavidez Jr.</p>
+  </footer>
 </body>
 </html>

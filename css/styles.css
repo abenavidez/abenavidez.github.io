@@ -1,29 +1,96 @@
+
+#nav {
+  position: fixed;
+  line-height:30px;
+  background-color:#FF6E40;
+  width:200px;
+  height: inherit;
+  float:left;
+  padding: 60px 50px 10px 50px;
+  z-index: 1;
+  margin: auto auto auto 40px;
+}
+
+
+#main {
+  width: 900px;
+  height: inherit;
+  max-height: 900px;
+  margin: auto 100px auto 200px;
+  float: center;
+  z-index: -1;
+  background: #616161;
+  line-height:30px;
+  padding:100px 200px 100px 250px;
+}
+
+
 body {
+  height: 900px;
   font: 16px/1.5 verdana, helvetica-neue, helvetica, arial, san-serif;
-  background: black;
-  color: #ececec;
-  padding: 0;
-  margin: 0;
+  background: #212121;
+  color: #F5F5F5;
 }
-ul {
+
+footer{
+
+}
+
+ul.nav {
+  list-style-type: none;
+  text-indent: 60px;
   margin: 0;
   padding: 0;
 }
+
+
+a.nav{
+  display: block;
+  width: 80px;
+  color: white;
+}
+
 a {
-  color: #ccc;
+  color: black;
   text-decoration: none;
 }
- 
+
 a:hover {
   color: #ececec;
   text-decoration: underline;
 }
- 
-#main {
-  width: 960px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.4);
+
+.media {
+  display: inline;
 }
+
+
+li.nav {
+  font-size: 140%;
+  padding-bottom: 10%;
+
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.leftContent{
+  align:left;
+  display:inline-table;
+  width: 180px;
+
+}
+
+.rightContent{
+  display: inline-table;
+  width: auto;
+  width: 500px;
+  margin-left: 150px;
+}
+
 header {
   padding: 0 10px;
   overflow: hidden;
@@ -31,43 +98,46 @@ header {
 h1 {
   margin: 0;
 }
- 
-nav ul, ul.entries {
-  list-style-type: none;
-}
-nav li a {
-  float: left;
-  margin: 5px; 
-}
+
 .content {
   padding: 10px;
 }
- 
+
 ul.entries li {
+  list-style-type: none;
   position: relative;
-  margin: 20px auto;
-  padding: 20px;
-  background: #ececec;
-  width: 600px;
+  margin: 10px auto;
+  padding: 2px;
+  background: #FF7043;
+  width: 800px;
 }
- 
+
 ul.entries img {
-  width: 600px;
+  float: left;
+  width: 100px;
+  margin-right: 20px;
 }
- 
-ul.entries li h3 {
-  position: absolute;
+
+ul.entries h3 h2 h4{
+  display: inline;
   bottom: -18px;
-  left: 17px;
+  right: 50px;
   font-size: 2em;
 }
+
+ul.entries span {
+   color: #F5F5F5;
+   font-family: Monaco, "Courier New", monospace;
+   font-size: 100%;
+ }
+
 ul.entries a {
   color: #ececec;
 }
 ul.entries a:hover {
   color: #fff;
 }
- 
+
 footer {
   font-size: 0.65em;
   text-align: center;

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Projects
+---
+
+<section class="content">
+  <h2>Projects</h2>
+</section>
+
+<ul class="entries">
+  {% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <li>
+      <!-- <img src="{{ post.image }}" /> -->
+      <span style="color:#F5F5F5" >{{ post.date | date_to_string }}</span> &raquo;
+        <h4 style="display:inline">{{ post.title }}</h4>
+    </li>
+  </a>
+
+  {% endfor %}
+</ul>
